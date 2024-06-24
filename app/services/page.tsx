@@ -16,11 +16,11 @@ const services = [
   },
   {
     num: '03',
-    title: 'Logo Designer',
-    description: 'My goal is to deliver high-quality, performant solutions that enhance user experiences and meet client needs.'
+    title: 'Backend development',
+    description: 'With a solid foundation in Node.js and Express.js, and experience with databases like MongoDB and PostgreSQL, I build robust and scalable backend systems. My expertise includes API development, database management, and ensuring security and performance in web applications.'
   },
   {
-    num: '05',
+    num: '04',
     title: 'SEO',
     description: 'I craft user-friendly and visually appealing web applications. My goal is to deliver high-quality, performant solutions that enhance user experiences and meet client needs.'
   },
@@ -40,19 +40,19 @@ function Services() {
           className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'
         >
           {services.map((service, index) => {
-            return <div key={index} className='flex-1 flex flex-col justify-center gap-6 group'>
-             
+            return <div key={index} className='flex-1 flex flex-col justify-center gap-5 group'>
+
               <div className="w-full flex justify-between items-center">
-                <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">{service.num}
+                <div className="text-3xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                  {service.num}
                 </div>
                 <Link href={'/'} className='w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45'>
-                
-                  <BsArrowDownRight className='text-primary text-3xl'/>
+                  <BsArrowDownRight className='text-primary text-3xl' />
                 </Link>
               </div>
-              <h2 className='text-[43px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500'>{service.title}</h2>
+              <h2 className='text-[33px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500'>{service.title}</h2>
 
-              <p className='text-white/60'>{service.description}</p>
+              <p className='text-white/60 text-[14px]'>{service.description}</p>
               <div className="border-b border-white/20 w-full"></div>
             </div>
           })}

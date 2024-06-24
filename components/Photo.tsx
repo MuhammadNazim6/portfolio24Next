@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import image from '../public/Muhammad_Nazim-removebg.png'
+
 function Photo() {
   return (
     <div className="w-full h-full relative">
@@ -36,7 +36,7 @@ function Photo() {
             cy="253"
             r="250"
             stroke="#00ff99"
-            strokeWidth="4"
+            strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
             initial={{strokeDasharray:"24 18 0 0"}}
